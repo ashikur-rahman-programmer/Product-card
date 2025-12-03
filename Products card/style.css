@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+
+body {
+  max-width: 100%;
+  min-height: 100vh;
+  background-color: #33333388;
+  color: #ffff;
+}
+
+.card-section {
+  margin: 0 auto;
+  padding: 5%;
+}
+
+/* container */
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+/* image */
+.card-img {
+  height: 300px;
+  width: 100%;
+  overflow: hidden;
+  background: radial-gradient(
+    circle,
+    rgba(42, 128, 189, 1) 0%,
+    rgba(0, 0, 0, 1) 90%
+  );
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.card-img img {
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  height: 100%;
+  padding: 30px;
+}
+
+/* card */
+.cards {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex: 1 1 200px; /* min width 300px */
+  max-width: 250px;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 100%,
+    rgba(112, 112, 112, 1) 100%
+  );
+  border-radius: 15px;
+}
+
+/* items */
+.card-bg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -15px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 10%, rgb(80, 80, 80) 100%);
+  border-radius: 15px;
+}
+
+.items {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 40px;
+  padding: 40px 0 0 20px;
+  border-radius: 15px;
+}
+
+.item-1,
+.item-2 {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+
+/* // */
+.cd-img {
+  background: radial-gradient(
+    circle,
+    rgb(251, 63, 210, 1) 0%,
+    rgba(0, 0, 0, 1) 90%
+  );
+}
+.crd-img {
+  background: radial-gradient(
+    circle,
+    rgb(255, 130, 1) 0%,
+    rgba(36, 35, 35, 1) 90%
+  );
+}
+
+.item-1 h2 {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: monospace, sans-serif;
+}
+
+.item-1 p {
+  font-size: 12px;
+  line-height: 1.4;
+  color: #ffffffa1;
+}
+
+.item-1 .icon {
+  color: rgba(42, 128, 189, 1);
+}
+.item-1 .icon-2 {
+  color: rgb(251, 63, 210, 1);
+}
+.item-1 .icon-3 {
+  color: rgb(255, 130, 1);
+}
+.item-1 .none {
+  color: #ffffff9a;
+}
+
+.item-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+}
+
+.title {
+  line-height: 1;
+}
+.title h3 {
+  font-size: 12px;
+}
+.title span {
+  font-size: 8px;
+  color: #ffffffa1;
+}
+.h3-1 {
+  color: rgba(42, 128, 189, 1);
+}
+.h3-2 {
+  color: rgb(251, 63, 210, 1);
+}
+.h3-3 {
+  color: rgb(255, 130, 1);
+}
+
+.btn {
+  font-size: 16px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  margin: 25px 0 15px 0;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(-5px);
+}
+
+.btn-1 {
+  background: rgba(42, 128, 189, 1);
+}
+.btn-2 {
+  background: rgb(251, 63, 210, 1);
+}
+.btn-3 {
+  background: rgb(255, 130, 1);
+}
+
+button {
+  background: transparent;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ffff;
+}
+
+/* card */
+.after-1,
+.after-2,
+.after-3 {
+  position: relative;
+}
+
+.after-1::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  right: -13px;
+  background: rgba(42, 128, 189, 1);
+}
+.after-2::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  right: -13px;
+  background: rgb(251, 63, 210, 1);
+}
+.after-3::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  right: -13px;
+  background: rgb(255, 130, 1);
+}
+/* img */
+.cards {
+  position: relative;
+}
+.img-after-1,
+.img-after-2,
+.img-after-3 {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  color: #fff;
+  padding: 8px 15px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  font-size: 20px;
+  font-weight: 700;
+  z-index: 10;
+}
+.img-after-1 {
+  background: linear-gradient(
+    0deg,
+    rgba(42, 128, 189, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+.img-after-2 {
+  background: linear-gradient(
+    0deg,
+    rgb(251, 63, 210, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+.img-after-3 {
+  background: linear-gradient(
+    0deg,
+    rgb(255, 130, 1) 0%,
+    rgba(36, 35, 35, 1) 100%
+  );
+}
